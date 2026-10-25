@@ -41,7 +41,7 @@ It's for builders and creators who make things with AI agents and want to show *
 | 💬 **Captions** | Burned-in, timed to each spoken word, in a yellow pill. |
 | ⏪ **A cold open** | The film opens with its ending's hook, rewinds ("let me take you back…"), then tells the story from the start. |
 | 🎵 **Music on the beat** | A Pixabay track that is **not registered with Content ID**. Scenes land on downbeats, the demo lands on the drop, and the music dips under the voice. |
-| ✅ **Checked output** | Contact sheets, mask checks, and an automatic check of size, length, loudness (around −16 LUFS), peaks and drop timing, plus a final review of the actual MP4s. |
+| ✅ **Checked output** | Contact sheets, mask checks, and an automatic check of size, length, loudness (around −16 LUFS), peaks and drop timing, plus a **mandatory final review** of the actual MP4s: claims, masks frame by frame, captions, the cold open, the sound. |
 
 ---
 
@@ -56,7 +56,7 @@ This sample was made by the skill itself. It tells the true story of how **this 
   <img src="docs/images/sample-ar-9x16.gif" alt="Arabic 9:16 sample: the cold open rewinds into the story" width="27%">
 </p>
 
-**Watch or download all four sample videos (with sound)** from the [latest release](https://github.com/eyoussef-builds/agent-story-video/releases/latest). The voice is AI-generated (OpenAI, *marin*). Music: "Digital Technology" by AtlasAudio, via [Pixabay](https://pixabay.com/music/corporate-digital-technology-617560/).
+**Watch or download all four sample videos (with sound)** from the [sample-video release](https://github.com/eyoussef-builds/agent-story-video/releases/tag/v1.0.0). The voice is AI-generated (OpenAI, *marin*). Music: "Digital Technology" by AtlasAudio, via [Pixabay](https://pixabay.com/music/corporate-digital-technology-617560/).
 
 ---
 
@@ -285,7 +285,8 @@ Two infographics explain what the skill does and how to start, with its GitHub l
 ```text
 skills/agent-story-video/
   SKILL.md        The workflow the agent follows
-  references/     Story, scenes, screenshots & masks, narrator, voice casting, audio, QA guides
+  references/     Story, scenes, screenshots & masks, narrator, voice casting, audio, QA guides,
+                  and the mandatory final review of the finished MP4s
   template/       The Remotion project copied for every film (contains the sample story)
     src/          Scene types, narrator, captions, storyboard.json, narration.json, brand.json
     scripts/      Voice casting, voice-over, captions, planner, music analysis/extension,

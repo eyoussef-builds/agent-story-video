@@ -40,7 +40,8 @@ reference when you reach its step:
 - `references/narrator.md` — the four narrator kinds, the sprite-sheet format, calm-motion rules, character privacy
 - `references/voice-casting.md` — choosing the voice with the user: brief → samples → numbers → feedback → adjust
 - `references/audio.md` — music search/choice/extension, the voice-over, captions, the mix
-- `references/qa.md` — Arabic/RTL, rendering pitfalls, the QA checklist and the mandatory final review
+- `references/qa.md` — Arabic/RTL, rendering pitfalls and the QA checklist
+- `references/final-review.md` — the mandatory final review of the actual MP4s (step 8)
 
 ## Workflow
 
@@ -130,10 +131,12 @@ node scripts/check-output.mjs          # size, length, loudness −19…−12 LU
 ```
 
 ### 8. Mandatory final review
-Perform the final review in `references/qa.md` on the actual encoded MP4s: story and every claim against
-the facts, masks on every frame that shows a screenshot, captions vs voice, the cold-open seam, the drop,
-the end card, Arabic/RTL. Fix and re-render what fails. State plainly what you could not check (you usually
-cannot listen — invite the user to check the voice and the rewind by ear).
+Read and perform [the final film review](references/final-review.md) on every final encoded MP4, alongside the
+technical QA. Compare the story, every claim, the masks on every screenshot frame, captions, the narrator, the
+cold-open seam, the drop, the end card, Arabic/RTL and the sound with the approved script and the facts. Fix
+findings, re-render and recheck the affected files, and keep a short private note of what was reviewed. A
+passing checker, transcript or contact sheet alone does not establish a finished film; state plainly what you
+could not check (you usually cannot listen — invite the user to check the voice and the rewind by ear).
 
 ### 9. Deliver
 Send the MP4s (SendUserFile if available, otherwise full paths) with a short scene-by-scene summary, the

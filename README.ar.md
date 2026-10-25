@@ -43,7 +43,7 @@
 | 💬 **كابشن** | مكتوب على الفيديو، ومتظبط على كل كلمة بتتقال، في برواز أصفر. |
 | ⏪ **بداية بالنهاية** | الفيلم بيفتح بأقوى جملة في النهاية، وبعدين يرجّع لورا («خلّوني أرجعكم للأول…»)، ويحكي الحكاية من أولها. |
 | 🎵 **مزيكا على الإيقاع** | مقطوعة من Pixabay **غير مسجّلة في Content ID**. كل مشهد بيبدأ على ضربة، والديمو بينزل على ذروة المزيكا، والمزيكا بتوطى تحت الصوت. |
-| ✅ **مراجعة للنتيجة** | لقطات لكل مشهد، ومراجعة للتغطية، وفحص تلقائي للمقاس والمدة وعلو الصوت (حوالي ‎−16 LUFS‎) والذروات وتوقيت الـdrop، ومراجعة أخيرة على ملفات الـMP4 نفسها. |
+| ✅ **مراجعة للنتيجة** | لقطات لكل مشهد، ومراجعة للتغطية، وفحص تلقائي للمقاس والمدة وعلو الصوت (حوالي ‎−16 LUFS‎) والذروات وتوقيت الـdrop، و**مراجعة أخيرة إلزامية** على ملفات الـMP4 نفسها: الكلام، والتغطية لقطة بلقطة، والكابشن، والبداية بالنهاية، والصوت. |
 
 ---
 
@@ -58,7 +58,7 @@
   <img src="docs/images/sample-ar-9x16.gif" alt="مثال عربي 9:16: البداية بالنهاية بترجع لأول الحكاية" width="27%">
 </p>
 
-**شوف أو نزّل الأربع فيديوهات التجريبية (بالصوت)** من [آخر إصدار](https://github.com/eyoussef-builds/agent-story-video/releases/latest). الصوت مولّد بالذكاء الاصطناعي (OpenAI، صوت *marin*). المزيكا: ‏"Digital Technology"‏ من AtlasAudio عبر [Pixabay](https://pixabay.com/music/corporate-digital-technology-617560/).
+**شوف أو نزّل الأربع فيديوهات التجريبية (بالصوت)** من [الإصدار اللي فيه الفيديوهات التجريبية](https://github.com/eyoussef-builds/agent-story-video/releases/tag/v1.0.0). الصوت مولّد بالذكاء الاصطناعي (OpenAI، صوت *marin*). المزيكا: ‏"Digital Technology"‏ من AtlasAudio عبر [Pixabay](https://pixabay.com/music/corporate-digital-technology-617560/).
 
 ---
 
@@ -297,7 +297,8 @@ reminder bot. The script and screenshots are in ~/Desktop/bot-story/
 ```text
 skills/agent-story-video/
   SKILL.md        The workflow the agent follows
-  references/     Story, scenes, screenshots & masks, narrator, voice casting, audio, QA guides
+  references/     Story, scenes, screenshots & masks, narrator, voice casting, audio, QA guides,
+                  and the mandatory final review of the finished MP4s
   template/       The Remotion project copied for every film (contains the sample story)
     src/          Scene types, narrator, captions, storyboard.json, narration.json, brand.json
     scripts/      Voice casting, voice-over, captions, planner, music analysis/extension,

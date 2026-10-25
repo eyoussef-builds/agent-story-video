@@ -1,4 +1,4 @@
-# Brand, Arabic/RTL, rendering pitfalls, QA and the final review
+# Brand, Arabic/RTL, rendering pitfalls and QA
 
 ## Brand (`src/brand.json`)
 Ships with Eslam Youssef's eyoussef.me look: paper `#FAF8F2`, ink `#15130F`, yellow `#FFE04A`, the "sun"
@@ -33,15 +33,5 @@ colour tokens. The creator's site tag shows between the intro and the end card; 
 - [ ] Narrator calm (rare pose changes; one jump, one wave); captions yellow, readable, in sync.
 - [ ] Music credited (title · artist · Pixabay link · not Content ID registered).
 
-## Mandatory final review (on the encoded MP4s)
-A render, a passing checker or a contact sheet is not a finished film. On the actual MP4s:
-- Story: compare each scene's words and visuals with the approved script and the facts; the cold open
-  makes sense on its own and the bridge leads into the intro; the ending's ask is clear.
-- Pictures: extract frames at every scene landing, every cue that reveals something, the cold-open seam
-  (teaser → bridge → intro), the drop and the last second; inspect at full size; masks hold on every frame.
-- Sound (when the host can listen): complete narration, names pronounced, no hoarseness/clipping, music
-  under the voice, the rewind sound, the quiet beat before the intro. When it can't, say so and measure:
-  loudness per scene, silence gaps, voice-vs-music level; invite the user to listen.
-- Files: names, dimensions, durations, decodability, loudness and peaks for every format.
-Fix what fails, re-render the affected files, re-check them, and keep a short private note of what was
-reviewed and what couldn't be. Deliver only reviewed files, and name anything missing.
+## Mandatory final review
+After the checklist, perform [the final film review](final-review.md) on the actual encoded MP4s.
