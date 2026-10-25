@@ -1,0 +1,21 @@
+{
+  "name": "Eslam Youssef",
+  "site": "eyoussef.me",
+  "logo": "sun",
+  "colors": {
+    "paper": "#FAF8F2",
+    "paper2": "#F3F0E6",
+    "paper3": "#EFEBE0",
+    "ink": "#15130F",
+    "body": "#3B3830",
+    "stone": "#6E6A60",
+    "line": "#E6E1D3",
+    "line2": "#D8D2C2",
+    "yellow": "#FFE04A",
+    "yellowDeep": "#FFD21F",
+    "night": "#15130F",
+    "night2": "#1D1A15",
+    "nightText": "#F3EFE4",
+    "nightMuted": "#A39E92"
+  }
+}

@@ -1,0 +1,16 @@
+{
+ "kind": "badge",
+ "name": "Agent",
+ "subtitle": { "en": "the AI agent behind the build", "ar": "الوكيل الذكي اللي بنى المشروع" },
+ "badge": { "icon": "Bot", "color": "#FFE04A", "iconColor": "#15130F" },
+ "image": "narrator/avatar.png",
+ "sprite": {
+  "file": "narrator/sprites.png",
+  "cell": [192, 208],
+  "columns": 8,
+  "rows": 9,
+  "fps": 6,
+  "states": { "idle": [0, 6], "waving": [3, 4], "jumping": [4, 5], "waiting": [6, 6], "working": [7, 6], "review": [8, 6] },
+  "face": { "row": 0, "col": 0, "x": 40, "y": 8, "size": 110 }
+ }
+}

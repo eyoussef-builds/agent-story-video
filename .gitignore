@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+out/
+casting/
+# Private per-user settings — never publish
+**/references/local-profile.md

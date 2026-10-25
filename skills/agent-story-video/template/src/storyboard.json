@@ -1,0 +1,484 @@
+{
+ "product": {
+  "name": "Agent Story Video",
+  "repo": "github.com/eyoussef-builds/agent-story-video",
+  "icon": null,
+  "accent": [
+   "#15130F",
+   "#3B3830"
+  ],
+  "outputName": "AgentStoryVideo"
+ },
+ "langs": [
+  "en",
+  "ar"
+ ],
+ "targetSeconds": [
+  60,
+  110
+ ],
+ "scenes": [
+  {
+   "id": "teaser",
+   "type": "ending",
+   "prologue": true,
+   "musicFrom": "ending",
+   "minSeconds": 6,
+   "voDelay": 0.4,
+   "narrator": "hidden"
+  },
+  {
+   "id": "bridge",
+   "type": "rewind",
+   "prologue": true,
+   "sfx": "rewind.mp3",
+   "minSeconds": 3,
+   "voDelay": 0.5,
+   "narrator": "hidden",
+   "content": {
+    "label": {
+     "en": "Back to the start…",
+     "ar": "نرجع للأول…"
+    },
+    "labelAt": "start"
+   }
+  },
+  {
+   "id": "intro",
+   "type": "intro",
+   "minSeconds": 6,
+   "voDelay": 0.6,
+   "narrator": "hidden",
+   "content": {
+    "hello": {
+     "title": {
+      "en": "Hi, I'm the agent 👋",
+      "ar": "أهلًا، أنا الوكيل 👋"
+     },
+     "subtitle": {
+      "en": "behind this video",
+      "ar": "اللي ورا الفيديو ده"
+     }
+    },
+    "tags": [
+     {
+      "text": {
+       "en": "Script → video",
+       "ar": "من سكريبت لفيديو"
+      },
+      "icon": "Clapperboard"
+     },
+     {
+      "text": "EN · AR",
+      "icon": "Languages"
+     },
+     {
+      "text": "16:9 · 9:16",
+      "icon": "Smartphone"
+     }
+    ],
+    "rewindTag": {
+     "en": "Let me take you back",
+     "ar": "خلّوني أرجعكم للأول"
+    }
+   }
+  },
+  {
+   "id": "ask",
+   "type": "dialog",
+   "minSeconds": 8,
+   "voDelay": 0.3,
+   "narrator": "idle",
+   "content": {
+    "kicker": {
+     "en": "The ask",
+     "ar": "الطلب"
+    },
+    "window": {
+     "icon": "Terminal",
+     "title": "Claude Code"
+    },
+    "messages": [
+     {
+      "who": "human",
+      "at": "q-4",
+      "text": {
+       "en": "Turn this video into a skill.",
+       "ar": "حوّل الفيديو ده لمهارة."
+      }
+     },
+     {
+      "who": "human",
+      "at": "mine-4",
+      "text": {
+       "en": "But the character is mine… and not everyone has one.",
+       "ar": "بس الشخصية دي بتاعتي… ومش كل الناس عندها شخصية."
+      }
+     },
+     {
+      "who": "agent",
+      "at": "optional-4",
+      "text": {
+       "en": "Then the narrator is optional: [[your character, a photo, a badge — or none]].",
+       "ar": "يبقى الراوي اختياري: [[شخصيتك، صورة، شارة… أو من غير]]."
+      }
+     },
+     {
+      "who": "human",
+      "at": "voice-4",
+      "text": {
+       "en": "And add how we chose the voice.",
+       "ar": "وضيف إزاي اخترنا الصوت."
+      }
+     }
+    ],
+    "note": {
+     "text": {
+      "en": "Paraphrased conversation",
+      "ar": "إعادة صياغة للحوار"
+     },
+     "icon": "Quote"
+    }
+   }
+  },
+  {
+   "id": "voice",
+   "type": "slides",
+   "minSeconds": 8,
+   "voDelay": 0.3,
+   "narrator": "idle",
+   "narratorAt": {
+    "samples": "working"
+   },
+   "content": {
+    "kicker": {
+     "en": "Choosing the voice",
+     "ar": "اختيار الصوت"
+    },
+    "slides": [
+     {
+      "blocks": [
+       {
+        "type": "tags",
+        "items": [
+         {
+          "text": {
+           "en": "fable — rejected",
+           "ar": "fable — مرفوض"
+          },
+          "icon": "X",
+          "at": "three"
+         },
+         {
+          "text": {
+           "en": "ash — rejected",
+           "ar": "ash — مرفوض"
+          },
+          "icon": "X",
+          "at": "three+10"
+         },
+         {
+          "text": {
+           "en": "coral — rejected",
+           "ar": "coral — مرفوض"
+          },
+          "icon": "X",
+          "at": "three+20"
+         }
+        ]
+       },
+       {
+        "type": "quote",
+        "text": {
+         "en": "“Cute like a kid… and no hoarseness.”",
+         "ar": "«صوت طفل لطيف… ومن غير بحّة»"
+        },
+        "icon": "MessageSquareQuote"
+       }
+      ]
+     },
+     {
+      "at": "samples",
+      "blocks": [
+       {
+        "type": "terminal",
+        "title": "node scripts/voice-casting.mjs",
+        "at": "samples",
+        "lines": [
+         "$ node scripts/voice-casting.mjs",
+         "A marin  pitch 189 Hz  clarity 12.5 dB  rough 31%",
+         "B cedar  pitch 148 Hz  clarity  7.9 dB  rough 60%",
+         "C coral  pitch 202 Hz  clarity 11.3 dB  rough 33%",
+         "✓ casting/report.md"
+        ]
+       },
+       {
+        "type": "tags",
+        "items": [
+         {
+          "text": {
+           "en": "pitch",
+           "ar": "طبقة الصوت"
+          },
+          "icon": "AudioLines",
+          "dark": true,
+          "at": "measure"
+         },
+         {
+          "text": {
+           "en": "roughness",
+           "ar": "الخشونة"
+          },
+          "icon": "AudioWaveform",
+          "dark": true,
+          "at": "measure+10"
+         },
+         {
+          "text": {
+           "en": "speed",
+           "ar": "السرعة"
+          },
+          "icon": "Gauge",
+          "dark": true,
+          "at": "measure+20"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "at": "picked",
+      "blocks": [
+       {
+        "type": "headline",
+        "text": {
+         "en": "You [[listen and pick]] 🎧",
+         "ar": "وإنت [[تسمع وتختار]] 🎧"
+        },
+        "at": "picked"
+       },
+       {
+        "type": "note",
+        "text": {
+         "en": "Every new video starts this way",
+         "ar": "كل فيديو جديد بيبدأ كده"
+        },
+        "icon": "Repeat"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "questions",
+   "type": "questions",
+   "minSeconds": 8,
+   "voDelay": 0.3,
+   "narrator": "idle",
+   "content": {
+    "kicker": {
+     "en": "Questions first",
+     "ar": "الأسئلة الأول"
+    },
+    "questions": [
+     {
+      "q": {
+       "en": "What's the story?",
+       "ar": "الحكاية إيه؟"
+      },
+      "a": {
+       "en": "How this skill was made",
+       "ar": "إزاي المهارة دي اتعملت"
+      },
+      "at": "q1"
+     },
+     {
+      "q": {
+       "en": "A narrator character?",
+       "ar": "فيه شخصية راوي؟"
+      },
+      "a": {
+       "en": "No — a simple badge",
+       "ar": "لأ — شارة بسيطة"
+      },
+      "at": "q2"
+     },
+     {
+      "q": {
+       "en": "Which voice?",
+       "ar": "أنهي صوت؟"
+      },
+      "a": {
+       "en": "Picked from samples",
+       "ar": "اتختار من عينات"
+      },
+      "at": "q3"
+     },
+     {
+      "q": {
+       "en": "Languages and formats?",
+       "ar": "اللغات والمقاسات؟"
+      },
+      "a": "EN + AR · 16:9 + 9:16",
+      "at": "q4"
+     }
+    ],
+    "plan": {
+     "at": "plan",
+     "title": {
+      "en": "The plan",
+      "ar": "الخطة"
+     },
+     "items": [
+      {
+       "text": {
+        "en": "The script, cut into scenes",
+        "ar": "السكريبت متقسّم مشاهد"
+       },
+       "at": "scenes"
+      },
+      {
+       "text": {
+        "en": "Real screenshots, private details blurred",
+        "ar": "صور حقيقية والبيانات الخاصة متغطية"
+       },
+       "at": "shots"
+      },
+      {
+       "text": {
+        "en": "Captions on every word",
+        "ar": "كابشن على كل كلمة"
+       },
+       "at": "captions"
+      },
+      {
+       "text": {
+        "en": "Music cut on the beat",
+        "ar": "مزيكا على الإيقاع"
+       },
+       "at": "music"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "build",
+   "type": "slides",
+   "minSeconds": 8,
+   "voDelay": 0.9,
+   "onDrop": true,
+   "drop": true,
+   "narrator": "idle",
+   "content": {
+    "kicker": {
+     "en": "Building it",
+     "ar": "البناء"
+    },
+    "slides": [
+     {
+      "blocks": [
+       {
+        "type": "shot",
+        "shot": "repo",
+        "width": 0.86,
+        "zoom": {
+         "at": "engine",
+         "to": 1.3,
+         "fx": 300,
+         "fy": 205,
+         "len": 90
+        },
+        "highlight": {
+         "at": "engine+20",
+         "box": [
+          170,
+          186,
+          250,
+          40
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "at": "data",
+      "blocks": [
+       {
+        "type": "code",
+        "file": "src/storyboard.json",
+        "code": "{ \"id\": \"build\", \"type\": \"slides\",\n  \"content\": { \"slides\": [ { \"blocks\": [\n    { \"type\": \"shot\", \"shot\": \"repo\" } ] } ] } }"
+       },
+       {
+        "type": "tags",
+        "items": [
+         {
+          "text": {
+           "en": "Scenes from data",
+           "ar": "مشاهد من بيانات"
+          },
+          "icon": "Braces",
+          "dark": true,
+          "at": "data+6"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "at": "cold",
+      "blocks": [
+       {
+        "type": "headline",
+        "text": {
+         "en": "It opens with [[the ending]]",
+         "ar": "بيبدأ [[بالنهاية]]"
+        },
+        "at": "cold"
+       },
+       {
+        "type": "tags",
+        "items": [
+         {
+          "text": {
+           "en": "A calm narrator",
+           "ar": "راوي هادي"
+          },
+          "icon": "Feather",
+          "at": "calm"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "ending",
+   "type": "ending",
+   "minSeconds": 8,
+   "voDelay": 0.4,
+   "narrator": "hidden",
+   "content": {
+    "productAt": "product",
+    "links": [
+     {
+      "icon": "Github",
+      "text": "github.com/eyoussef-builds/agent-story-video",
+      "at": "github"
+     }
+    ],
+    "final": {
+     "icon": "Clapperboard",
+     "text": {
+      "en": "This video was made with it",
+      "ar": "الفيديو ده معمول بيها"
+     },
+     "at": "made"
+    }
+   }
+  }
+ ]
+}

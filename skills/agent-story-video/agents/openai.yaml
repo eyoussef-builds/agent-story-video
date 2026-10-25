@@ -1,0 +1,6 @@
+interface:
+  display_name: "Agent Story Video"
+  short_description: "The behind-the-scenes story of how your AI agent built something, told by the agent"
+  default_prompt: "Use $agent-story-video to turn this script and these screenshots into a behind-the-scenes video narrated by my agent: Egyptian Arabic, 16:9 and 9:16, captions, a cold open and music on the beat."
+policy:
+  allow_implicit_invocation: true

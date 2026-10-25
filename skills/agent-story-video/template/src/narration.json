@@ -1,0 +1,179 @@
+{
+ "voice": "marin",
+ "speed": 1.25,
+ "pitch": 0,
+ "clean": "",
+ "style": "Voice: a warm, friendly AI agent telling the behind-the-scenes story of something it built with its human. Clear, bright and smooth — no breathiness, no rasp. Proud but humble, a little playful, natural storytelling pace. Natural pauses at ellipses.",
+ "pronounce": "Say Agent Story Video, Claude Code, GitHub, fable, ash and coral in English.",
+ "clips": [
+  {
+   "scene": "teaser",
+   "copyFrom": "ending"
+  },
+  {
+   "scene": "bridge",
+   "en": "But let's start at the beginning.",
+   "ar": "بس خلّوني أبدأ من الأول.",
+   "cues": {
+    "start": [
+     "start",
+     "أبدأ"
+    ]
+   }
+  },
+  {
+   "scene": "intro",
+   "en": "Hi, I'm the agent behind this video. Eslam made a behind-the-scenes film with me… then asked me to turn it into a skill anyone can use. Let me take you back.",
+   "ar": "أهلًا، أنا الوكيل اللي ورا الفيديو ده. إسلام عمل معايا فيلم من ورا الكواليس… وبعدها طلب مني أحوّله لمهارة أي حد يقدر يستخدمها. خلّوني أرجعكم للأول.",
+   "cues": {
+    "product": [
+     "skill",
+     "لمهارة"
+    ],
+    "story": [
+     "let",
+     "خلّوني"
+    ]
+   }
+  },
+  {
+   "scene": "ask",
+   "en": "Eslam asked me to turn the video into a skill. But the character in it is his own… and not everyone has one. So the narrator became optional: your own character, a photo, a simple badge, or no narrator at all. And he asked for one more thing: the way we chose the voice.",
+   "ar": "إسلام طلب مني أحوّل الفيديو لمهارة. بس الشخصية اللي فيه بتاعته هو… ومش كل الناس عندها شخصية. فخلّيت الراوي اختياري: شخصيتك، أو صورة، أو شارة بسيطة، أو من غير راوي خالص. وطلب حاجة كمان: الطريقة اللي اخترنا بيها الصوت.",
+   "cues": {
+    "q": [
+     "asked",
+     "طلب"
+    ],
+    "mine": [
+     "character",
+     "الشخصية"
+    ],
+    "optional": [
+     "optional",
+     "اختياري"
+    ],
+    "voice": [
+     "voice",
+     "الصوت"
+    ]
+   }
+  },
+  {
+   "scene": "voice",
+   "en": "For the first video, three voices were rejected. Eslam wanted a cute, kid-like voice… without hoarseness. So I generated samples, measured their pitch and roughness, and he listened and picked. Now every video starts that way.",
+   "ar": "في الفيديو الأول، اترفضت تلات أصوات. إسلام كان عايز صوت طفل لطيف… من غير بحّة. فعملت عينات، وقِست طبقة الصوت والخشونة، وهو سمع واختار. ودلوقتي كل فيديو بيبدأ كده.",
+   "cues": {
+    "three": [
+     "three",
+     "تلات"
+    ],
+    "hoarse": [
+     "hoarse",
+     "بحّة"
+    ],
+    "samples": [
+     "samples",
+     "عينات"
+    ],
+    "measure": [
+     "measured",
+     "وقِست"
+    ],
+    "picked": [
+     "listened",
+     "سمع"
+    ],
+    "every": [
+     "every",
+     "كل"
+    ]
+   }
+  },
+  {
+   "scene": "questions",
+   "en": "Every video starts with questions. What's the story? Is there a narrator? Which voice? Which languages and formats? From the answers comes the plan: scenes, real screenshots with private details blurred, captions on every word, and music on the beat.",
+   "ar": "وكل فيديو بيبدأ بأسئلة: الحكاية إيه؟ فيه راوي ولا لأ؟ أنهي صوت؟ وأنهي لغات ومقاسات؟ ومن الإجابات بتطلع الخطة: مشاهد، وصور حقيقية متغطي فيها أي بيانات خاصة، وكابشن على كل كلمة، ومزيكا على الإيقاع.",
+   "cues": {
+    "q1": [
+     "story",
+     "الحكاية"
+    ],
+    "q2": [
+     "narrator",
+     "راوي"
+    ],
+    "q3": [
+     "voice",
+     "صوت"
+    ],
+    "q4": [
+     "languages",
+     "لغات"
+    ],
+    "plan": [
+     "plan",
+     "الخطة"
+    ],
+    "scenes": [
+     "scenes",
+     "مشاهد"
+    ],
+    "shots": [
+     "screenshots",
+     "وصور"
+    ],
+    "captions": [
+     "captions",
+     "وكابشن"
+    ],
+    "music": [
+     "music",
+     "ومزيكا"
+    ]
+   }
+  },
+  {
+   "scene": "build",
+   "en": "I built it on the engine of Eslam's showcase-video skill: scenes made from data, a cold open that starts with the ending, and a calm narrator that never steals the eye.",
+   "ar": "وبنيتها على محرك مهارة فيديوهات المنتجات بتاعة إسلام: مشاهد بتتبني من بيانات، وبداية بتفتح بالنهاية، وراوي هادي عمره ما يشد العين بعيد عن الحكاية.",
+   "cues": {
+    "engine": [
+     "engine",
+     "محرك"
+    ],
+    "data": [
+     "data",
+     "بيانات"
+    ],
+    "cold": [
+     "cold",
+     "وبداية"
+    ],
+    "calm": [
+     "calm",
+     "هادي"
+    ]
+   }
+  },
+  {
+   "scene": "ending",
+   "en": "Agent Story Video is free and open source on GitHub. And this video you just watched? I made it with that skill.",
+   "ar": "مهارة Agent Story Video مجانية ومفتوحة المصدر على GitHub. والفيديو اللي لسه شايفينه ده؟ أنا عملته بالمهارة دي.",
+   "cues": {
+    "product": [
+     "agent",
+     "مهارة"
+    ],
+    "github": [
+     "github",
+     "github|جيت|جت"
+    ],
+    "made": [
+     "made",
+     "عملته"
+    ]
+   }
+  }
+ ]
+}
